@@ -1,0 +1,20 @@
+ 
+****************************************
+Report : clocks
+Design : DLX
+Version: S-2021.06-SP4
+Date   : Fri Jul 18 23:06:13 2025
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk              1.00   {0 0.5}                       {clk}
+--------------------------------------------------------------------------------
+1

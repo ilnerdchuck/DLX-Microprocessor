@@ -1,0 +1,15 @@
+Gate area 0.7980 um^2
+Level 0 Module DLX                                      Gates=     25235 Cells=    8563 Area=   20137.8 um^2
+Level 1 Module CU_inst                                  Gates=143        Cells=44       Area=     114.1 um^2
+Level 1 Module datapath_inst                            Gates=25089      Cells=8517     Area=   20021.0 um^2
+Level 2 Module datapath_inst/fetch_inst                 Gates=508        Cells=160      Area=     405.9 um^2
+Level 2 Module datapath_inst/decode_inst                Gates=14700      Cells=4486     Area=   11730.9 um^2
+Level 3 Module datapath_inst/decode_inst/decode_RF      Gates=13278      Cells=3965     Area=   10596.1 um^2
+Level 3 Module datapath_inst/decode_inst/add_div_161    Gates=105        Cells=63       Area=      83.8 um^2
+Level 2 Module datapath_inst/execute_inst               Gates=2313       Cells=1248     Area=    1846.0 um^2
+Level 3 Module datapath_inst/execute_inst/r105          Gates=236        Cells=65       Area=     188.3 um^2
+Level 3 Module datapath_inst/execute_inst/r99           Gates=190        Cells=162      Area=     151.9 um^2
+Level 3 Module datapath_inst/execute_inst/srl_123       Gates=321        Cells=217      Area=     256.2 um^2
+Level 3 Module datapath_inst/execute_inst/sll_121       Gates=414        Cells=224      Area=     330.6 um^2
+Level 2 Module datapath_inst/write_mem_rf_inst          Gates=7487       Cells=2573     Area=    5975.2 um^2
+Level 3 Module datapath_inst/write_mem_rf_inst/DRAM_inst Gates=7147       Cells=2464     Area=    5703.6 um^2

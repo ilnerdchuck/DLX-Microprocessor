@@ -1,0 +1,446 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'DLX' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+Design : DLX
+Version: S-2021.06-SP4
+Date   : Fri Jul 18 23:08:13 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: datapath_inst/fetch_inst/IR_reg[28]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: CU_inst/alu_func_type_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DLX                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  datapath_inst/fetch_inst/IR_reg[28]/CK (SDFFS_X1)       0.00 #     0.00 r
+  datapath_inst/fetch_inst/IR_reg[28]/Q (SDFFS_X1)        0.07       0.07 f
+  datapath_inst/fetch_inst/IR_out[28] (fetch_stage_OPERAND_SIZE32_I_SIZE32)
+                                                          0.00       0.07 f
+  datapath_inst/U4/ZN (OR2_X2)                            0.06       0.13 f
+  datapath_inst/IR_out[28] (datapath_I_SIZE32_OPERAND_SIZE32_NUM_REG5_FUN_SIZE11)
+                                                          0.00       0.13 f
+  CU_inst/IR_IN[28] (control_unit_MICROCODE_MEM_SIZE10_FUN_SIZE11_OP_CODE_SIZE6_IR_SIZE32_CW_SIZE15)
+                                                          0.00       0.13 f
+  CU_inst/U41/ZN (INV_X1)                                 0.03       0.15 r
+  CU_inst/U42/ZN (OAI211_X1)                              0.04       0.19 f
+  CU_inst/U39/ZN (OAI211_X1)                              0.04       0.23 r
+  CU_inst/U17/ZN (NAND2_X1)                               0.03       0.26 f
+  CU_inst/alu_func_type_reg[5]/D (DFF_X1)                 0.01       0.27 f
+  data arrival time                                                  0.27
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  CU_inst/alu_func_type_reg[5]/CK (DFF_X1)                0.00       0.00 r
+  library setup time                                     -0.04      -0.04
+  data required time                                                -0.04
+  --------------------------------------------------------------------------
+  data required time                                                -0.04
+  data arrival time                                                 -0.27
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.31
+
+
+  Startpoint: datapath_inst/fetch_inst/IR_reg[28]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: CU_inst/alu_func_type_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DLX                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  datapath_inst/fetch_inst/IR_reg[28]/CK (SDFFS_X1)       0.00 #     0.00 r
+  datapath_inst/fetch_inst/IR_reg[28]/Q (SDFFS_X1)        0.07       0.07 f
+  datapath_inst/fetch_inst/IR_out[28] (fetch_stage_OPERAND_SIZE32_I_SIZE32)
+                                                          0.00       0.07 f
+  datapath_inst/U4/ZN (OR2_X2)                            0.06       0.13 f
+  datapath_inst/IR_out[28] (datapath_I_SIZE32_OPERAND_SIZE32_NUM_REG5_FUN_SIZE11)
+                                                          0.00       0.13 f
+  CU_inst/IR_IN[28] (control_unit_MICROCODE_MEM_SIZE10_FUN_SIZE11_OP_CODE_SIZE6_IR_SIZE32_CW_SIZE15)
+                                                          0.00       0.13 f
+  CU_inst/U41/ZN (INV_X1)                                 0.03       0.15 r
+  CU_inst/U42/ZN (OAI211_X1)                              0.04       0.19 f
+  CU_inst/U39/ZN (OAI211_X1)                              0.04       0.23 r
+  CU_inst/U17/ZN (NAND2_X1)                               0.03       0.26 f
+  CU_inst/alu_func_type_reg[5]/D (DFF_X1)                 0.01       0.26 f
+  data arrival time                                                  0.26
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  CU_inst/alu_func_type_reg[5]/CK (DFF_X1)                0.00       0.00 r
+  library setup time                                     -0.04      -0.04
+  data required time                                                -0.04
+  --------------------------------------------------------------------------
+  data required time                                                -0.04
+  data arrival time                                                 -0.26
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.30
+
+
+  Startpoint: datapath_inst/fetch_inst/IR_reg[30]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: CU_inst/alu_func_type_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DLX                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  datapath_inst/fetch_inst/IR_reg[30]/CK (DFFS_X1)        0.00 #     0.00 r
+  datapath_inst/fetch_inst/IR_reg[30]/Q (DFFS_X1)         0.08       0.08 f
+  datapath_inst/fetch_inst/IR_out[30] (fetch_stage_OPERAND_SIZE32_I_SIZE32)
+                                                          0.00       0.08 f
+  datapath_inst/U36/ZN (OR2_X2)                           0.06       0.14 f
+  datapath_inst/IR_out[30] (datapath_I_SIZE32_OPERAND_SIZE32_NUM_REG5_FUN_SIZE11)
+                                                          0.00       0.14 f
+  CU_inst/IR_IN[30] (control_unit_MICROCODE_MEM_SIZE10_FUN_SIZE11_OP_CODE_SIZE6_IR_SIZE32_CW_SIZE15)
+                                                          0.00       0.14 f
+  CU_inst/U65/ZN (NOR2_X1)                                0.04       0.18 r
+  CU_inst/U39/ZN (OAI211_X1)                              0.05       0.23 f
+  CU_inst/U17/ZN (NAND2_X1)                               0.03       0.26 r
+  CU_inst/alu_func_type_reg[5]/D (DFF_X1)                 0.01       0.27 r
+  data arrival time                                                  0.27
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  CU_inst/alu_func_type_reg[5]/CK (DFF_X1)                0.00       0.00 r
+  library setup time                                     -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.27
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.30
+
+
+  Startpoint: datapath_inst/fetch_inst/IR_reg[28]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: CU_inst/alu_func_type_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DLX                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  datapath_inst/fetch_inst/IR_reg[28]/CK (SDFFS_X1)       0.00 #     0.00 r
+  datapath_inst/fetch_inst/IR_reg[28]/Q (SDFFS_X1)        0.07       0.07 r
+  datapath_inst/fetch_inst/IR_out[28] (fetch_stage_OPERAND_SIZE32_I_SIZE32)
+                                                          0.00       0.07 r
+  datapath_inst/U4/ZN (OR2_X2)                            0.04       0.11 r
+  datapath_inst/IR_out[28] (datapath_I_SIZE32_OPERAND_SIZE32_NUM_REG5_FUN_SIZE11)
+                                                          0.00       0.11 r
+  CU_inst/IR_IN[28] (control_unit_MICROCODE_MEM_SIZE10_FUN_SIZE11_OP_CODE_SIZE6_IR_SIZE32_CW_SIZE15)
+                                                          0.00       0.11 r
+  CU_inst/U41/ZN (INV_X1)                                 0.02       0.14 f
+  CU_inst/U42/ZN (OAI211_X1)                              0.05       0.18 r
+  CU_inst/U39/ZN (OAI211_X1)                              0.05       0.23 f
+  CU_inst/U17/ZN (NAND2_X1)                               0.03       0.26 r
+  CU_inst/alu_func_type_reg[5]/D (DFF_X1)                 0.01       0.27 r
+  data arrival time                                                  0.27
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  CU_inst/alu_func_type_reg[5]/CK (DFF_X1)                0.00       0.00 r
+  library setup time                                     -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.27
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.30
+
+
+  Startpoint: datapath_inst/fetch_inst/IR_reg[26]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: CU_inst/alu_func_type_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DLX                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  datapath_inst/fetch_inst/IR_reg[26]/CK (DFFS_X1)        0.00 #     0.00 r
+  datapath_inst/fetch_inst/IR_reg[26]/Q (DFFS_X1)         0.09       0.09 r
+  datapath_inst/fetch_inst/IR_out[26] (fetch_stage_OPERAND_SIZE32_I_SIZE32)
+                                                          0.00       0.09 r
+  datapath_inst/U35/ZN (OR2_X1)                           0.04       0.13 r
+  datapath_inst/IR_out[26] (datapath_I_SIZE32_OPERAND_SIZE32_NUM_REG5_FUN_SIZE11)
+                                                          0.00       0.13 r
+  CU_inst/IR_IN[26] (control_unit_MICROCODE_MEM_SIZE10_FUN_SIZE11_OP_CODE_SIZE6_IR_SIZE32_CW_SIZE15)
+                                                          0.00       0.13 r
+  CU_inst/U46/ZN (INV_X1)                                 0.02       0.15 f
+  CU_inst/U47/ZN (AND2_X1)                                0.03       0.18 f
+  CU_inst/U36/ZN (NOR3_X1)                                0.05       0.23 r
+  CU_inst/U76/ZN (NOR2_X1)                                0.02       0.25 f
+  CU_inst/alu_func_type_reg[2]/D (DFF_X1)                 0.01       0.26 f
+  data arrival time                                                  0.26
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  CU_inst/alu_func_type_reg[2]/CK (DFF_X1)                0.00       0.00 r
+  library setup time                                     -0.04      -0.04
+  data required time                                                -0.04
+  --------------------------------------------------------------------------
+  data required time                                                -0.04
+  data arrival time                                                 -0.26
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.30
+
+
+  Startpoint: datapath_inst/fetch_inst/IR_reg[26]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: CU_inst/alu_func_type_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DLX                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  datapath_inst/fetch_inst/IR_reg[26]/CK (DFFS_X1)        0.00 #     0.00 r
+  datapath_inst/fetch_inst/IR_reg[26]/Q (DFFS_X1)         0.08       0.08 f
+  datapath_inst/fetch_inst/IR_out[26] (fetch_stage_OPERAND_SIZE32_I_SIZE32)
+                                                          0.00       0.08 f
+  datapath_inst/U35/ZN (OR2_X1)                           0.06       0.14 f
+  datapath_inst/IR_out[26] (datapath_I_SIZE32_OPERAND_SIZE32_NUM_REG5_FUN_SIZE11)
+                                                          0.00       0.14 f
+  CU_inst/IR_IN[26] (control_unit_MICROCODE_MEM_SIZE10_FUN_SIZE11_OP_CODE_SIZE6_IR_SIZE32_CW_SIZE15)
+                                                          0.00       0.14 f
+  CU_inst/U46/ZN (INV_X1)                                 0.03       0.16 r
+  CU_inst/U47/ZN (AND2_X1)                                0.04       0.20 r
+  CU_inst/U36/ZN (NOR3_X1)                                0.02       0.22 f
+  CU_inst/U76/ZN (NOR2_X1)                                0.03       0.26 r
+  CU_inst/alu_func_type_reg[2]/D (DFF_X1)                 0.01       0.26 r
+  data arrival time                                                  0.26
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  CU_inst/alu_func_type_reg[2]/CK (DFF_X1)                0.00       0.00 r
+  library setup time                                     -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.26
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.30
+
+
+  Startpoint: datapath_inst/fetch_inst/IR_reg[30]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: CU_inst/alu_func_type_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DLX                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  datapath_inst/fetch_inst/IR_reg[30]/CK (DFFS_X1)        0.00 #     0.00 r
+  datapath_inst/fetch_inst/IR_reg[30]/Q (DFFS_X1)         0.08       0.08 f
+  datapath_inst/fetch_inst/IR_out[30] (fetch_stage_OPERAND_SIZE32_I_SIZE32)
+                                                          0.00       0.08 f
+  datapath_inst/U36/ZN (OR2_X2)                           0.06       0.14 f
+  datapath_inst/IR_out[30] (datapath_I_SIZE32_OPERAND_SIZE32_NUM_REG5_FUN_SIZE11)
+                                                          0.00       0.14 f
+  CU_inst/IR_IN[30] (control_unit_MICROCODE_MEM_SIZE10_FUN_SIZE11_OP_CODE_SIZE6_IR_SIZE32_CW_SIZE15)
+                                                          0.00       0.14 f
+  CU_inst/U47/ZN (AND2_X1)                                0.04       0.18 f
+  CU_inst/U36/ZN (NOR3_X1)                                0.05       0.23 r
+  CU_inst/U76/ZN (NOR2_X1)                                0.02       0.25 f
+  CU_inst/alu_func_type_reg[2]/D (DFF_X1)                 0.01       0.26 f
+  data arrival time                                                  0.26
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  CU_inst/alu_func_type_reg[2]/CK (DFF_X1)                0.00       0.00 r
+  library setup time                                     -0.04      -0.04
+  data required time                                                -0.04
+  --------------------------------------------------------------------------
+  data required time                                                -0.04
+  data arrival time                                                 -0.26
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.30
+
+
+  Startpoint: datapath_inst/fetch_inst/IR_reg[30]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: CU_inst/alu_func_type_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DLX                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  datapath_inst/fetch_inst/IR_reg[30]/CK (DFFS_X1)        0.00 #     0.00 r
+  datapath_inst/fetch_inst/IR_reg[30]/Q (DFFS_X1)         0.08       0.08 f
+  datapath_inst/fetch_inst/IR_out[30] (fetch_stage_OPERAND_SIZE32_I_SIZE32)
+                                                          0.00       0.08 f
+  datapath_inst/U36/ZN (OR2_X2)                           0.06       0.14 f
+  datapath_inst/IR_out[30] (datapath_I_SIZE32_OPERAND_SIZE32_NUM_REG5_FUN_SIZE11)
+                                                          0.00       0.14 f
+  CU_inst/IR_IN[30] (control_unit_MICROCODE_MEM_SIZE10_FUN_SIZE11_OP_CODE_SIZE6_IR_SIZE32_CW_SIZE15)
+                                                          0.00       0.14 f
+  CU_inst/U65/ZN (NOR2_X1)                                0.04       0.18 r
+  CU_inst/U39/ZN (OAI211_X1)                              0.04       0.23 f
+  CU_inst/U17/ZN (NAND2_X1)                               0.03       0.26 r
+  CU_inst/alu_func_type_reg[5]/D (DFF_X1)                 0.01       0.27 r
+  data arrival time                                                  0.27
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  CU_inst/alu_func_type_reg[5]/CK (DFF_X1)                0.00       0.00 r
+  library setup time                                     -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.27
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.30
+
+
+  Startpoint: datapath_inst/fetch_inst/IR_reg[28]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: CU_inst/alu_func_type_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DLX                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  datapath_inst/fetch_inst/IR_reg[28]/CK (SDFFS_X1)       0.00 #     0.00 r
+  datapath_inst/fetch_inst/IR_reg[28]/Q (SDFFS_X1)        0.07       0.07 r
+  datapath_inst/fetch_inst/IR_out[28] (fetch_stage_OPERAND_SIZE32_I_SIZE32)
+                                                          0.00       0.07 r
+  datapath_inst/U4/ZN (OR2_X2)                            0.04       0.11 r
+  datapath_inst/IR_out[28] (datapath_I_SIZE32_OPERAND_SIZE32_NUM_REG5_FUN_SIZE11)
+                                                          0.00       0.11 r
+  CU_inst/IR_IN[28] (control_unit_MICROCODE_MEM_SIZE10_FUN_SIZE11_OP_CODE_SIZE6_IR_SIZE32_CW_SIZE15)
+                                                          0.00       0.11 r
+  CU_inst/U41/ZN (INV_X1)                                 0.02       0.14 f
+  CU_inst/U42/ZN (OAI211_X1)                              0.05       0.18 r
+  CU_inst/U39/ZN (OAI211_X1)                              0.04       0.22 f
+  CU_inst/U17/ZN (NAND2_X1)                               0.03       0.25 r
+  CU_inst/alu_func_type_reg[5]/D (DFF_X1)                 0.01       0.26 r
+  data arrival time                                                  0.26
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  CU_inst/alu_func_type_reg[5]/CK (DFF_X1)                0.00       0.00 r
+  library setup time                                     -0.03      -0.03
+  data required time                                                -0.03
+  --------------------------------------------------------------------------
+  data required time                                                -0.03
+  data arrival time                                                 -0.26
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.29
+
+
+  Startpoint: datapath_inst/fetch_inst/IR_reg[30]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: CU_inst/alu_func_type_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DLX                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  datapath_inst/fetch_inst/IR_reg[30]/CK (DFFS_X1)        0.00 #     0.00 r
+  datapath_inst/fetch_inst/IR_reg[30]/Q (DFFS_X1)         0.09       0.09 r
+  datapath_inst/fetch_inst/IR_out[30] (fetch_stage_OPERAND_SIZE32_I_SIZE32)
+                                                          0.00       0.09 r
+  datapath_inst/U36/ZN (OR2_X2)                           0.04       0.13 r
+  datapath_inst/IR_out[30] (datapath_I_SIZE32_OPERAND_SIZE32_NUM_REG5_FUN_SIZE11)
+                                                          0.00       0.13 r
+  CU_inst/IR_IN[30] (control_unit_MICROCODE_MEM_SIZE10_FUN_SIZE11_OP_CODE_SIZE6_IR_SIZE32_CW_SIZE15)
+                                                          0.00       0.13 r
+  CU_inst/U65/ZN (NOR2_X1)                                0.03       0.16 f
+  CU_inst/U39/ZN (OAI211_X1)                              0.04       0.20 r
+  CU_inst/U17/ZN (NAND2_X1)                               0.03       0.23 f
+  CU_inst/alu_func_type_reg[5]/D (DFF_X1)                 0.01       0.24 f
+  data arrival time                                                  0.24
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  CU_inst/alu_func_type_reg[5]/CK (DFF_X1)                0.00       0.00 r
+  library setup time                                     -0.04      -0.04
+  data required time                                                -0.04
+  --------------------------------------------------------------------------
+  data required time                                                -0.04
+  data arrival time                                                 -0.24
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.28
+
+
+1

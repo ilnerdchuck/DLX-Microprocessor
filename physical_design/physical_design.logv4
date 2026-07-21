@@ -1,0 +1,271 @@
+[07/19 02:56:47      0s] 
+[07/19 02:56:47      0s] Cadence Innovus(TM) Implementation System.
+[07/19 02:56:47      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[07/19 02:56:47      0s] 
+[07/19 02:56:47      0s] Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+[07/19 02:56:47      0s] Options:	-cpus 8 -files ./scripts/scripts_templates/physical_design.tcl -log ./physical_design/physical_design.log 
+[07/19 02:56:47      0s] Date:		Sat Jul 19 02:56:47 2025
+[07/19 02:56:47      0s] Host:		localhost.localdomain (x86_64 w/Linux 3.10.0-1062.12.1.el7.x86_64) (10cores*10cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+[07/19 02:56:47      0s] OS:		CentOS Linux release 7.7.1908 (Core)
+[07/19 02:56:47      0s] 
+[07/19 02:56:47      0s] License:
+[07/19 02:56:47      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[07/19 02:56:47      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[07/19 02:57:35     34s] @(#)CDS: Innovus v20.11-s130_1 (64bit) 08/05/2020 15:53 (Linux 2.6.32-431.11.2.el6.x86_64)
+[07/19 02:57:35     34s] @(#)CDS: NanoRoute 20.11-s130_1 NR200802-2257/20_11-UB (database version 18.20.512) {superthreading v2.9}
+[07/19 02:57:35     34s] @(#)CDS: AAE 20.11-s008 (64bit) 08/05/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[07/19 02:57:35     34s] @(#)CDS: CTE 20.11-s059_1 () Aug  2 2020 05:46:30 ( )
+[07/19 02:57:35     34s] @(#)CDS: SYNTECH 20.11-s028_1 () Aug  1 2020 06:14:27 ( )
+[07/19 02:57:35     34s] @(#)CDS: CPE v20.11-s013
+[07/19 02:57:35     34s] @(#)CDS: IQuantus/TQuantus 19.1.3-s260 (64bit) Thu May 28 10:57:28 PDT 2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[07/19 02:57:35     34s] @(#)CDS: OA 22.60-s011 Tue Jun 16 12:27:00 2020
+[07/19 02:57:35     34s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[07/19 02:57:35     34s] @(#)CDS: RCDB 11.15.0
+[07/19 02:57:35     34s] @(#)CDS: STYLUS 20.10-p011_1 (06/03/2020 04:47 PDT)
+[07/19 02:57:35     34s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_3557_localhost.localdomain_ms25.2_dOyv95.
+
+[07/19 02:57:35     34s] Change the soft stacksize limit to 0.2%RAM (64 mbytes). Set global soft_stack_size_limit to change the value.
+[07/19 02:57:35     34s] setMultiCpuUsage -localCpu 8
+[07/19 02:57:39     36s] 
+[07/19 02:57:39     36s] **INFO:  MMMC transition support version v31-84 
+[07/19 02:57:39     36s] 
+[07/19 02:57:39     36s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[07/19 02:57:39     36s] <CMD> suppressMessage ENCEXT-2799
+[07/19 02:57:40     36s] Sourcing file "./scripts/scripts_templates/physical_design.tcl" ...
+[07/19 02:57:40     36s] <CMD> setMultiCpuUsage -localCpu 8 -cpuAutoAdjust true
+[07/19 02:57:40     36s] <CMD> set defHierChar /
+[07/19 02:57:40     36s] Set Default Input Pin Transition as 0.1 ps.
+[07/19 02:57:40     36s] <CMD> set delaycal_input_transition_delay 0.1ps
+[07/19 02:57:40     36s] <CMD> set fpIsMaxIoHeight 0
+[07/19 02:57:40     36s] <CMD> set init_gnd_net gnd
+[07/19 02:57:40     36s] <CMD> set init_mmmc_file ./scripts/scripts_templates/default.view
+[07/19 02:57:40     36s] <CMD> set init_oa_search_lib {}
+[07/19 02:57:40     36s] <CMD> set init_pwr_net vdd
+[07/19 02:57:40     36s] <CMD> set init_verilog ./physical_design/designs/dlx-structural-strictopt.v
+[07/19 02:57:40     36s] <CMD> set init_lef_file /eda/dk/nangate45/lef/NangateOpenCellLibrary.lef
+[07/19 02:57:40     36s] <CMD> init_design
+[07/19 02:57:40     36s] #% Begin Load MMMC data ... (date=07/19 02:57:40, mem=583.1M)
+[07/19 02:57:40     36s] #% End Load MMMC data ... (date=07/19 02:57:40, total cpu=0:00:00.0, real=0:00:00.0, peak res=583.3M, current mem=583.3M)
+[07/19 02:57:40     37s] 
+[07/19 02:57:40     37s] Loading LEF file /eda/dk/nangate45/lef/NangateOpenCellLibrary.lef ...
+[07/19 02:57:40     37s] Set DBUPerIGU to M2 pitch 380.
+[07/19 02:57:40     37s] 
+[07/19 02:57:40     37s] viaInitial starts at Sat Jul 19 02:57:40 2025
+viaInitial ends at Sat Jul 19 02:57:40 2025
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[07/19 02:57:40     37s] Loading view definition file from ./scripts/scripts_templates/default.view
+[07/19 02:57:40     37s] Starting library reading in 'Multi-threaded flow' (with '8' threads)
+[07/19 02:57:41     42s] Reading libsTYP timing library /eda/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib.
+[07/19 02:57:41     42s] **ERROR: (TECHLIB-1346):	The attribute 'index_1' defined in group 'ecsm_waveform' on line 393863 is not monotonically increasing for values '0.000041' to '0.000037'. This may lead to undesirable analysis results. The attribute will be ignored. (File /eda/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**ERROR: (TECHLIB-1256):	The ecsm_waveform group 1 is being ignored due to errors in this group. This group will be excluded for any further library checks. Refer to the previous messages issued for ecsm_waveform group 1 to find the details of the issues in this group. (File /eda/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib, Line 393862)
+**ERROR: (TECHLIB-420):	Number of ecsm_waveforms in the 'rise_transition' table on pin ZN of cell OAI222_X2 does not match the number of transition table axis points specified in the template 'Timing_7_7'. Ignoring waveform data. (File /eda/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib, Line 393848)
+**ERROR: (TECHLIB-1346):	The attribute 'index_1' defined in group 'ecsm_waveform' on line 395723 is not monotonically increasing for values '0.000041' to '0.000037'. This may lead to undesirable analysis results. The attribute will be ignored. (File /eda/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**ERROR: (TECHLIB-1256):	The ecsm_waveform group 1 is being ignored due to errors in this group. This group will be excluded for any further library checks. Refer to the previous messages issued for ecsm_waveform group 1 to find the details of the issues in this group. (File /eda/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib, Line 395722)
+**ERROR: (TECHLIB-420):	Number of ecsm_waveforms in the 'rise_transition' table on pin ZN of cell OAI222_X2 does not match the number of transition table axis points specified in the template 'Timing_7_7'. Ignoring waveform data. (File /eda/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib, Line 395708)
+Read 134 cells in library NangateOpenCellLibrary.
+[07/19 02:57:41     42s] Library reading multithread flow ended.
+[07/19 02:57:41     43s] Ending "PreSetAnalysisView" (total cpu=0:00:06.0, real=0:00:01.0, peak res=749.4M, current mem=603.8M)
+[07/19 02:57:41     43s] *** End library_loading (cpu=0.10min, real=0.02min, mem=51.0M, fe_cpu=0.72min, fe_real=0.90min, fe_mem=751.7M) ***
+[07/19 02:57:41     43s] #% Begin Load netlist data ... (date=07/19 02:57:41, mem=603.8M)
+[07/19 02:57:41     43s] *** Begin netlist parsing (mem=751.7M) ***
+[07/19 02:57:41     43s] Created 134 new cells from 1 timing libraries.
+[07/19 02:57:41     43s] Reading netlist ...
+[07/19 02:57:41     43s] Backslashed names will retain backslash and a trailing blank character.
+[07/19 02:57:41     43s] Reading verilog netlist './physical_design/designs/dlx-structural-strictopt.v'
+[07/19 02:57:41     43s] 
+[07/19 02:57:41     43s] *** Memory Usage v#2 (Current mem = 751.707M, initial mem = 280.289M) ***
+[07/19 02:57:41     43s] *** End netlist parsing (cpu=0:00:00.2, real=0:00:00.0, mem=751.7M) ***
+[07/19 02:57:41     43s] #% End Load netlist data ... (date=07/19 02:57:41, total cpu=0:00:00.2, real=0:00:00.0, peak res=611.8M, current mem=611.8M)
+[07/19 02:57:41     43s] Top level cell is DLX.
+[07/19 02:57:42     43s] Hooked 134 DB cells to tlib cells.
+[07/19 02:57:42     43s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=616.9M, current mem=616.9M)
+[07/19 02:57:42     43s] Starting recursive module instantiation check.
+[07/19 02:57:42     43s] No recursion found.
+[07/19 02:57:42     43s] Building hierarchical netlist for Cell DLX ...
+[07/19 02:57:42     43s] *** Netlist is unique.
+[07/19 02:57:42     43s] Setting Std. cell height to 2800 DBU (smallest netlist inst).
+[07/19 02:57:42     43s] ** info: there are 183 modules.
+[07/19 02:57:42     43s] ** info: there are 9978 stdCell insts.
+[07/19 02:57:42     43s] 
+[07/19 02:57:42     43s] *** Memory Usage v#2 (Current mem = 767.621M, initial mem = 280.289M) ***
+[07/19 02:57:42     43s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[07/19 02:57:42     43s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[07/19 02:57:42     43s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[07/19 02:57:42     43s] Set Default Net Delay as 1000 ps.
+[07/19 02:57:42     43s] Set Default Net Load as 0.5 pF. 
+[07/19 02:57:42     43s] Set Default Input Pin Transition as 0.1 ps.
+[07/19 02:57:43     44s] Extraction setup Started 
+[07/19 02:57:43     44s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[07/19 02:57:43     44s] Reading Capacitance Table File /eda/dk/nangate45/lef/captables/NCSU_FreePDK_45nm.capTbl ...
+[07/19 02:57:43     44s] Cap table was created using Encounter 08.10-p004_1.
+[07/19 02:57:43     44s] Process name: master_techFreePDK45.
+[07/19 02:57:43     44s] Importing multi-corner RC tables ... 
+[07/19 02:57:43     44s] Summary of Active RC-Corners : 
+[07/19 02:57:43     44s]  
+[07/19 02:57:43     44s]  Analysis View: default
+[07/19 02:57:43     44s]     RC-Corner Name        : standard
+[07/19 02:57:43     44s]     RC-Corner Index       : 0
+[07/19 02:57:43     44s]     RC-Corner Temperature : 300 Celsius
+[07/19 02:57:43     44s]     RC-Corner Cap Table   : '/eda/dk/nangate45/lef/captables/NCSU_FreePDK_45nm.capTbl'
+[07/19 02:57:43     44s]     RC-Corner PreRoute Res Factor         : 1
+[07/19 02:57:43     44s]     RC-Corner PreRoute Cap Factor         : 1
+[07/19 02:57:43     44s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[07/19 02:57:43     44s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[07/19 02:57:43     44s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[07/19 02:57:43     44s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[07/19 02:57:43     44s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[07/19 02:57:43     44s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[07/19 02:57:43     44s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[07/19 02:57:43     44s] LayerId::1 widthSet size::4
+[07/19 02:57:43     44s] LayerId::2 widthSet size::4
+[07/19 02:57:43     44s] LayerId::3 widthSet size::4
+[07/19 02:57:43     44s] LayerId::4 widthSet size::4
+[07/19 02:57:43     44s] LayerId::5 widthSet size::4
+[07/19 02:57:43     44s] LayerId::6 widthSet size::4
+[07/19 02:57:43     44s] LayerId::7 widthSet size::4
+[07/19 02:57:43     44s] LayerId::8 widthSet size::4
+[07/19 02:57:43     44s] LayerId::9 widthSet size::4
+[07/19 02:57:43     44s] LayerId::10 widthSet size::3
+[07/19 02:57:43     44s] Updating RC grid for preRoute extraction ...
+[07/19 02:57:43     44s] Initializing multi-corner capacitance tables ... 
+[07/19 02:57:43     44s] Initializing multi-corner resistance tables ...
+[07/19 02:57:43     44s] **Info: Trial Route has Max Route Layer 15/10.
+[07/19 02:57:43     44s] {RT standard 0 10 10 {4 1} {7 0} {9 0} 3}
+[07/19 02:57:43     44s] Preroute length aware model : LLS: 2-3 ; HLS: 3-5 ; rDens: 0.000000 ; uaWl: 0.000000 ; uaWlH: 0.000000 ; aWlH: 0.000000 ; Pmax: 0.850000 ; wcR: 0.000000 ; newSi: 0.000000 ; pMod: 82 ; 
+[07/19 02:57:43     44s] *Info: initialize multi-corner CTS.
+[07/19 02:57:44     45s] Ending "SetAnalysisView" (total cpu=0:00:00.5, real=0:00:01.0, peak res=843.6M, current mem=638.8M)
+[07/19 02:57:44     45s] Reading timing constraints file './physical_design/constraints/dlx-synthesized_constraints-strictopt.sdc' ...
+[07/19 02:57:44     45s] Current (total cpu=0:00:45.5, real=0:00:57.0, peak res=843.6M, current mem=842.8M)
+[07/19 02:57:44     45s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ./physical_design/constraints/dlx-synthesized_constraints-strictopt.sdc, Line 8).
+[07/19 02:57:44     45s] 
+[07/19 02:57:44     45s] INFO (CTE): Reading of timing constraints file ./physical_design/constraints/dlx-synthesized_constraints-strictopt.sdc completed, with 1 WARNING
+[07/19 02:57:44     45s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=850.0M, current mem=850.0M)
+[07/19 02:57:44     45s] Current (total cpu=0:00:45.6, real=0:00:57.0, peak res=850.0M, current mem=850.0M)
+[07/19 02:57:44     45s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[07/19 02:57:44     45s] Creating Cell Server ...(0, 1, 1, 1)
+[07/19 02:57:44     45s] Summary for sequential cells identification: 
+[07/19 02:57:44     45s]   Identified SBFF number: 16
+[07/19 02:57:44     45s]   Identified MBFF number: 0
+[07/19 02:57:44     45s]   Identified SB Latch number: 0
+[07/19 02:57:44     45s]   Identified MB Latch number: 0
+[07/19 02:57:44     45s]   Not identified SBFF number: 0
+[07/19 02:57:44     45s]   Not identified MBFF number: 0
+[07/19 02:57:44     45s]   Not identified SB Latch number: 0
+[07/19 02:57:44     45s]   Not identified MB Latch number: 0
+[07/19 02:57:44     45s]   Number of sequential cells which are not FFs: 13
+[07/19 02:57:44     45s] Total number of combinational cells: 99
+[07/19 02:57:44     45s] Total number of sequential cells: 29
+[07/19 02:57:44     45s] Total number of tristate cells: 6
+[07/19 02:57:44     45s] Total number of level shifter cells: 0
+[07/19 02:57:44     45s] Total number of power gating cells: 0
+[07/19 02:57:44     45s] Total number of isolation cells: 0
+[07/19 02:57:44     45s] Total number of power switch cells: 0
+[07/19 02:57:44     45s] Total number of pulse generator cells: 0
+[07/19 02:57:44     45s] Total number of always on buffers: 0
+[07/19 02:57:44     45s] Total number of retention cells: 0
+[07/19 02:57:44     45s] List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+[07/19 02:57:44     45s] Total number of usable buffers: 9
+[07/19 02:57:44     45s] List of unusable buffers:
+[07/19 02:57:44     45s] Total number of unusable buffers: 0
+[07/19 02:57:44     45s] List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+[07/19 02:57:44     45s] Total number of usable inverters: 6
+[07/19 02:57:44     45s] List of unusable inverters:
+[07/19 02:57:44     45s] Total number of unusable inverters: 0
+[07/19 02:57:44     45s] List of identified usable delay cells:
+[07/19 02:57:44     45s] Total number of identified usable delay cells: 0
+[07/19 02:57:44     45s] List of identified unusable delay cells:
+[07/19 02:57:44     45s] Total number of identified unusable delay cells: 0
+[07/19 02:57:44     45s] Creating Cell Server, finished. 
+[07/19 02:57:44     45s] 
+[07/19 02:57:44     45s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[07/19 02:57:44     45s] Deleting Cell Server ...
+[07/19 02:57:44     45s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=879.6M, current mem=879.6M)
+[07/19 02:57:44     45s] Creating Cell Server ...(0, 0, 0, 0)
+[07/19 02:57:44     45s] Summary for sequential cells identification: 
+[07/19 02:57:44     45s]   Identified SBFF number: 16
+[07/19 02:57:44     45s]   Identified MBFF number: 0
+[07/19 02:57:44     45s]   Identified SB Latch number: 0
+[07/19 02:57:44     45s]   Identified MB Latch number: 0
+[07/19 02:57:44     45s]   Not identified SBFF number: 0
+[07/19 02:57:44     45s]   Not identified MBFF number: 0
+[07/19 02:57:44     45s]   Not identified SB Latch number: 0
+[07/19 02:57:44     45s]   Not identified MB Latch number: 0
+[07/19 02:57:44     45s]   Number of sequential cells which are not FFs: 13
+[07/19 02:57:44     45s]  Visiting view : default
+[07/19 02:57:44     45s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[07/19 02:57:44     45s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[07/19 02:57:44     45s]  Visiting view : default
+[07/19 02:57:44     45s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[07/19 02:57:44     45s]    : PowerDomain = none : Weighted F : unweighted  = 7.80 (1.000) with rcCorner = -1
+[07/19 02:57:44     45s]  Setting StdDelay to 10.10
+[07/19 02:57:44     45s] Creating Cell Server, finished. 
+[07/19 02:57:44     45s] 
+[07/19 02:57:44     45s] 
+[07/19 02:57:44     45s] *** Summary of all messages that are not suppressed in this session:
+[07/19 02:57:44     45s] Severity  ID               Count  Summary                                  
+[07/19 02:57:44     45s] WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+[07/19 02:57:44     45s] ERROR     TECHLIB-420          2  Number of ecsm_waveforms in the '%s' tab...
+[07/19 02:57:44     45s] ERROR     TECHLIB-1256         2  The %s is being ignored due to errors in...
+[07/19 02:57:44     45s] ERROR     TECHLIB-1346         2  The attribute '%s' defined in group '%s'...
+[07/19 02:57:44     45s] *** Message Summary: 1 warning(s), 6 error(s)
+[07/19 02:57:44     45s] 
+[07/19 02:57:44     45s] <CMD> getIoFlowFlag
+[07/19 02:57:44     45s] <CMD> setIoFlowFlag 0
+[07/19 02:57:44     45s] <CMD> floorPlan -coreMarginsBy die -site FreePDK45_38x28_10R_NP_162NW_34O -r 1.0 0.6 5 5 5 5
+[07/19 02:57:44     45s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[07/19 02:57:44     45s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[07/19 02:57:44     45s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[07/19 02:57:44     45s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[07/19 02:57:44     45s] <CMD> uiSetTool select
+[07/19 02:57:44     45s] <CMD> getIoFlowFlag
+[07/19 02:57:44     45s] <CMD> fit
+[07/19 02:57:44     45s] <CMD> saveDesign ./physical_design/1_stage_init.enc
+[07/19 02:57:44     45s] #% Begin save design ... (date=07/19 02:57:44, mem=881.4M)
+[07/19 02:57:44     45s] % Begin Save ccopt configuration ... (date=07/19 02:57:44, mem=883.4M)
+[07/19 02:57:44     46s] % End Save ccopt configuration ... (date=07/19 02:57:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=884.3M, current mem=884.3M)
+[07/19 02:57:44     46s] % Begin Save netlist data ... (date=07/19 02:57:44, mem=884.3M)
+[07/19 02:57:44     46s] Writing Binary DB to ./physical_design/1_stage_init.enc.dat.tmp/vbin/DLX.v.bin in multi-threaded mode...
+[07/19 02:57:44     46s] % End Save netlist data ... (date=07/19 02:57:44, total cpu=0:00:00.1, real=0:00:00.0, peak res=913.0M, current mem=885.5M)
+[07/19 02:57:44     46s] Saving symbol-table file in separate thread ...
+[07/19 02:57:44     46s] Saving congestion map file in separate thread ...
+[07/19 02:57:44     46s] Saving congestion map file ./physical_design/1_stage_init.enc.dat.tmp/DLX.route.congmap.gz ...
+[07/19 02:57:44     46s] % Begin Save AAE data ... (date=07/19 02:57:44, mem=886.8M)
+[07/19 02:57:44     46s] Saving AAE Data ...
+[07/19 02:57:45     46s] % End Save AAE data ... (date=07/19 02:57:44, total cpu=0:00:00.0, real=0:00:01.0, peak res=886.8M, current mem=886.8M)
+[07/19 02:57:45     46s] Saving preference file ./physical_design/1_stage_init.enc.dat.tmp/gui.pref.tcl ...
+[07/19 02:57:45     46s] Saving mode setting ...
+[07/19 02:57:45     46s] **INFO (INTERRUPT): The current script will stop before next command.
+[07/19 02:57:45     46s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[07/19 02:57:45     46s] Saving global file ...
+[07/19 02:57:45     46s] Innovus terminated by user interrupt.
+[07/19 02:57:45     46s] Saving Drc markers ...
+[07/19 02:57:45     46s] ... No Drc file written since there is no markers found.
+[07/19 02:57:45     46s] Saving special route data file in separate thread ...
+[07/19 02:57:45     46s] Saving PG Conn data in separate thread ...
+[07/19 02:57:45     46s] Saving placement file in separate thread ...
+[07/19 02:57:45     46s] Saving route file in separate thread ...
+[07/19 02:57:45     46s] ** Saving stdCellPlacement_binary (version# 2) ...
+[07/19 02:57:45     46s] Saving property file in separate thread ...
+[07/19 02:57:45     46s] Save Adaptive View Pruning View Names to Binary file
+[07/19 02:57:45     46s] 
+[07/19 02:57:45     46s] *** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1052.9M) ***
+[07/19 02:57:45     46s] *** Memory Usage v#2 (Current mem = 1052.883M, initial mem = 280.289M) ***
+[07/19 02:57:45     46s] TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
+[07/19 02:57:45     46s] TAT_INFO: savePGConnFile REAL = 0 : CPU = 0 : MEM = 0.
+[07/19 02:57:45     46s] TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
+[07/19 02:57:45     46s] 
+[07/19 02:57:45     46s] *** Summary of all messages that are not suppressed in this session:
+[07/19 02:57:45     46s] Severity  ID               Count  Summary                                  
+[07/19 02:57:45     46s] WARNING   IMPFP-325            1  Floorplan of the design is resized. All ...
+[07/19 02:57:45     46s] Saving property file ./physical_design/1_stage_init.enc.dat.tmp/DLX.prop
+[07/19 02:57:45     46s] *** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1053.9M) ***
+[07/19 02:57:45     46s] WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+[07/19 02:57:45     46s] ERROR     TECHLIB-420          2  Number of ecsm_waveforms in the '%s' tab...
+[07/19 02:57:45     46s] ERROR     TECHLIB-1256         2  The %s is being ignored due to errors in...
+[07/19 02:57:45     46s] ERROR     TECHLIB-1346         2  The attribute '%s' defined in group '%s'...
+[07/19 02:57:45     46s] *** Message Summary: 2 warning(s), 6 error(s)
+[07/19 02:57:45     46s] 
+[07/19 02:57:45     46s] --- Ending "Innovus" (totcpu=0:00:46.5, real=0:00:58.0, mem=1053.9M) ---

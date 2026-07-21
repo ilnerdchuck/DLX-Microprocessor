@@ -1,0 +1,242 @@
+
+Power Net Detected:
+        Voltage	    Name
+             0V	    gnd
+           1.1V	    vdd
+Using Power View: default.
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: DLX
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (8 T). (MEM=2337.81)
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+AAE_INFO: 8 threads acquired from CTE.
+Total number of fetched objects 9953
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+End delay calculation. (MEM=2647.18 CPU=0:00:07.3 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=2647.18 CPU=0:00:08.4 REAL=0:00:02.0)
+Load RC corner of view default
+
+Begin Power Analysis
+
+             0V	    gnd
+           1.1V	    vdd
+
+Warning:
+  There are 2 power/gnd nets that are not connected
+gnd vdd ...
+Use 'globalNetConnect' to define rail connections.
+** WARN:  (VOLTUS_POWR-2035): There are 2 power/gnd nets that are not connected
+gnd vdd ...
+Use 'globalNetConnect' to define rail connections.
+
+
+
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1846.10MB/4015.98MB/1846.12MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+clk(1000MHz) CK: assigning clock clk to net clk
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1846.22MB/4015.98MB/1846.22MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1846.26MB/4015.98MB/1846.26MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2025-Jul-19 02:49:34 (2025-Jul-19 00:49:34 GMT)
+2025-Jul-19 02:49:34 (2025-Jul-19 00:49:34 GMT): 10%
+2025-Jul-19 02:49:34 (2025-Jul-19 00:49:34 GMT): 20%
+2025-Jul-19 02:49:34 (2025-Jul-19 00:49:34 GMT): 30%
+2025-Jul-19 02:49:34 (2025-Jul-19 00:49:34 GMT): 40%
+2025-Jul-19 02:49:34 (2025-Jul-19 00:49:34 GMT): 50%
+2025-Jul-19 02:49:34 (2025-Jul-19 00:49:34 GMT): 60%
+2025-Jul-19 02:49:34 (2025-Jul-19 00:49:34 GMT): 70%
+2025-Jul-19 02:49:34 (2025-Jul-19 00:49:34 GMT): 80%
+2025-Jul-19 02:49:34 (2025-Jul-19 00:49:34 GMT): 90%
+
+Finished Levelizing
+2025-Jul-19 02:49:34 (2025-Jul-19 00:49:34 GMT)
+
+Starting Activity Propagation
+2025-Jul-19 02:49:34 (2025-Jul-19 00:49:34 GMT)
+** INFO:  (VOLTUS_POWR-1356): No default input activity has been set. Defaulting to 0.2.
+Use 'set_default_switching_activity -input_activity' command to change the default activity value.
+
+2025-Jul-19 02:49:34 (2025-Jul-19 00:49:34 GMT): 10%
+
+Finished Activity Propagation
+2025-Jul-19 02:49:35 (2025-Jul-19 00:49:35 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1846.54MB/4015.98MB/1846.54MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      # of MSMV cell(s) missing power_level: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2025-Jul-19 02:49:35 (2025-Jul-19 00:49:35 GMT)
+  Cannot locate supply power rail for net
+'datapath_inst/execute_inst/FE_RN_11_0' of instance
+datapath_inst/execute_inst/FE_RC_256_0
+  Cannot locate supply power rail for net
+'datapath_inst/execute_inst/FE_RN_10_0' of instance
+datapath_inst/execute_inst/FE_RC_249_0
+  Cannot locate supply power rail for net
+'datapath_inst/execute_inst/FE_RN_9_0' of instance
+datapath_inst/execute_inst/FE_RC_242_0
+  Cannot locate supply power rail for net
+'datapath_inst/execute_inst/FE_RN_8_0' of instance
+datapath_inst/execute_inst/FE_RC_234_0
+  Cannot locate supply power rail for net 'CU_inst/FE_RN_7_0' of instance
+CU_inst/FE_RC_229_0
+  only first five unconnected nets are listed...
+2025-Jul-19 02:49:36 (2025-Jul-19 00:49:36 GMT): 10%
+2025-Jul-19 02:49:36 (2025-Jul-19 00:49:36 GMT): 20%
+2025-Jul-19 02:49:36 (2025-Jul-19 00:49:36 GMT): 30%
+2025-Jul-19 02:49:36 (2025-Jul-19 00:49:36 GMT): 40%
+2025-Jul-19 02:49:36 (2025-Jul-19 00:49:36 GMT): 50%
+2025-Jul-19 02:49:36 (2025-Jul-19 00:49:36 GMT): 60%
+2025-Jul-19 02:49:36 (2025-Jul-19 00:49:36 GMT): 70%
+2025-Jul-19 02:49:36 (2025-Jul-19 00:49:36 GMT): 80%
+2025-Jul-19 02:49:36 (2025-Jul-19 00:49:36 GMT): 90%
+
+Finished Calculating power
+2025-Jul-19 02:49:36 (2025-Jul-19 00:49:36 GMT)
+Ended Power Computation: (cpu=0:00:02, real=0:00:01, mem(process/total/peak)=2110.47MB/4096.01MB/2110.47MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2110.47MB/4096.01MB/2110.55MB)
+
+Ended Power Analysis: (cpu=0:00:03, real=0:00:02, mem(process/total/peak)=2110.55MB/4096.01MB/2110.55MB)
+
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=2110.55MB/4096.01MB/2110.56MB)
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 20.11-s130_1 (64bit) 08/05/2020 15:53 (Linux 2.6.32-431.11.2.el6.x86_64)
+*	
+*
+* 	Date & Time:	2025-Jul-19 02:49:36 (2025-Jul-19 00:49:36 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: DLX
+*
+*	Liberty Libraries used:
+*	        default: /eda/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib
+*
+*	Parasitic Files used:
+*
+*       Power View : default
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power
+*
+-----------------------------------------------------------------------------------------
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:       12.72982578 	   67.6549%
+Total Switching Power:       5.73385220 	   30.4736%
+Total Leakage Power:         0.35214408 	    1.8715%
+Total Power:                18.81582207
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         11.02       1.116      0.2178       12.35       65.66
+Macro                                  0           0           0           0           0
+IO                                     0           0           0           0           0
+Combinational                      1.384       2.501      0.1334       4.018       21.35
+Clock (Combinational)             0.3263       2.117   0.0009473       2.444       12.99
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                              12.73       5.734      0.3521       18.82         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Default                   1.1      12.73       5.734      0.3521       18.82         100
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clk                               0.3263       2.117   0.0009473       2.444       12.99
+-----------------------------------------------------------------------------------------
+Total                             0.3263       2.117   0.0009473       2.444       12.99
+-----------------------------------------------------------------------------------------
+Clock: clk
+Clock Period: 0.001000 usec 
+Clock Toggle Rate:  2000.0000 Mhz 
+Clock Static Probability:  0.5000
+  
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*              Highest Average Power: datapath_inst/decode_inst/decode_RF/CTS_ccl_a_buf_00124 (CLKBUF_X3):          0.08457
+*              Highest Leakage Power: datapath_inst/execute_inst/U35 (OAI221_X2):         0.000116
+*                Total Cap:      4.60821e-11 F
+*                Total instances in design:  8563
+*                Total instances in design with no power:     0
+*                Total instances in design with no activty:     0
+
+*                Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+ 
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=2111.83MB/4096.01MB/2111.96MB)
+

@@ -1,0 +1,11 @@
+ 
+****************************************
+Report : clocks
+Design : DLX
+Version: S-2021.06-SP4
+Date   : Fri Jul 18 23:03:25 2025
+****************************************
+
+No clocks in this design.
+
+1

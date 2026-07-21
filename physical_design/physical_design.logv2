@@ -1,0 +1,13 @@
+[07/19 02:56:11      0s] 
+[07/19 02:56:11      0s] Cadence Innovus(TM) Implementation System.
+[07/19 02:56:11      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[07/19 02:56:11      0s] 
+[07/19 02:56:11      0s] Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+[07/19 02:56:11      0s] Options:	-cpus 8 -no_gui -files ./scripts/scripts_templates/physical_design.tcl -log ./physical_design/physical_design.log 
+[07/19 02:56:11      0s] Date:		Sat Jul 19 02:56:11 2025
+[07/19 02:56:11      0s] Host:		localhost.localdomain (x86_64 w/Linux 3.10.0-1062.12.1.el7.x86_64) (10cores*10cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+[07/19 02:56:11      0s] OS:		CentOS Linux release 7.7.1908 (Core)
+[07/19 02:56:11      0s] 
+[07/19 02:56:11      0s] License:
+[07/19 02:56:11      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[07/19 02:56:11      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.

@@ -1,0 +1,197 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+Options:	-cpus 8 -files ./scripts/scripts_templates/physical_design.tcl -log ./physical_design/physical_design.log 
+Date:		Sat Jul 19 02:56:47 2025
+Host:		localhost.localdomain (x86_64 w/Linux 3.10.0-1062.12.1.el7.x86_64) (10cores*10cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+OS:		CentOS Linux release 7.7.1908 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (64 mbytes). Set global soft_stack_size_limit to change the value.
+setMultiCpuUsage -localCpu 8
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+Sourcing file "./scripts/scripts_templates/physical_design.tcl" ...
+<CMD> setMultiCpuUsage -localCpu 8 -cpuAutoAdjust true
+<CMD> set defHierChar /
+Set Default Input Pin Transition as 0.1 ps.
+<CMD> set delaycal_input_transition_delay 0.1ps
+<CMD> set fpIsMaxIoHeight 0
+<CMD> set init_gnd_net gnd
+<CMD> set init_mmmc_file ./scripts/scripts_templates/default.view
+<CMD> set init_oa_search_lib {}
+<CMD> set init_pwr_net vdd
+<CMD> set init_verilog ./physical_design/designs/dlx-structural-strictopt.v
+<CMD> set init_lef_file /eda/dk/nangate45/lef/NangateOpenCellLibrary.lef
+<CMD> init_design
+#% Begin Load MMMC data ... (date=07/19 02:57:40, mem=583.1M)
+#% End Load MMMC data ... (date=07/19 02:57:40, total cpu=0:00:00.0, real=0:00:00.0, peak res=583.3M, current mem=583.3M)
+high standard low
+
+Loading LEF file /eda/dk/nangate45/lef/NangateOpenCellLibrary.lef ...
+Set DBUPerIGU to M2 pitch 380.
+
+viaInitial starts at Sat Jul 19 02:57:40 2025
+viaInitial ends at Sat Jul 19 02:57:40 2025
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from ./scripts/scripts_templates/default.view
+Starting library reading in 'Multi-threaded flow' (with '8' threads)
+Reading libsTYP timing library /eda/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib.
+**ERROR: (TECHLIB-1346):	The attribute 'index_1' defined in group 'ecsm_waveform' on line 393863 is not monotonically increasing for values '0.000041' to '0.000037'. This may lead to undesirable analysis results. The attribute will be ignored. (File /eda/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**ERROR: (TECHLIB-1256):	The ecsm_waveform group 1 is being ignored due to errors in this group. This group will be excluded for any further library checks. Refer to the previous messages issued for ecsm_waveform group 1 to find the details of the issues in this group. (File /eda/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib, Line 393862)
+**ERROR: (TECHLIB-420):	Number of ecsm_waveforms in the 'rise_transition' table on pin ZN of cell OAI222_X2 does not match the number of transition table axis points specified in the template 'Timing_7_7'. Ignoring waveform data. (File /eda/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib, Line 393848)
+**ERROR: (TECHLIB-1346):	The attribute 'index_1' defined in group 'ecsm_waveform' on line 395723 is not monotonically increasing for values '0.000041' to '0.000037'. This may lead to undesirable analysis results. The attribute will be ignored. (File /eda/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**ERROR: (TECHLIB-1256):	The ecsm_waveform group 1 is being ignored due to errors in this group. This group will be excluded for any further library checks. Refer to the previous messages issued for ecsm_waveform group 1 to find the details of the issues in this group. (File /eda/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib, Line 395722)
+**ERROR: (TECHLIB-420):	Number of ecsm_waveforms in the 'rise_transition' table on pin ZN of cell OAI222_X2 does not match the number of transition table axis points specified in the template 'Timing_7_7'. Ignoring waveform data. (File /eda/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib, Line 395708)
+Read 134 cells in library NangateOpenCellLibrary.
+Library reading multithread flow ended.
+*** End library_loading (cpu=0.10min, real=0.02min, mem=51.0M, fe_cpu=0.72min, fe_real=0.90min, fe_mem=751.7M) ***
+#% Begin Load netlist data ... (date=07/19 02:57:41, mem=603.8M)
+*** Begin netlist parsing (mem=751.7M) ***
+Created 134 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist './physical_design/designs/dlx-structural-strictopt.v'
+
+*** Memory Usage v#2 (Current mem = 751.707M, initial mem = 280.289M) ***
+*** End netlist parsing (cpu=0:00:00.2, real=0:00:00.0, mem=751.7M) ***
+#% End Load netlist data ... (date=07/19 02:57:41, total cpu=0:00:00.2, real=0:00:00.0, peak res=611.8M, current mem=611.8M)
+Top level cell is DLX.
+Hooked 134 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell DLX ...
+*** Netlist is unique.
+** info: there are 183 modules.
+** info: there are 9978 stdCell insts.
+
+*** Memory Usage v#2 (Current mem = 767.621M, initial mem = 280.289M) ***
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Reading Capacitance Table File /eda/dk/nangate45/lef/captables/NCSU_FreePDK_45nm.capTbl ...
+Cap table was created using Encounter 08.10-p004_1.
+Process name: master_techFreePDK45.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default
+    RC-Corner Name        : standard
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 300 Celsius
+    RC-Corner Cap Table   : '/eda/dk/nangate45/lef/captables/NCSU_FreePDK_45nm.capTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+*Info: initialize multi-corner CTS.
+Reading timing constraints file './physical_design/constraints/dlx-synthesized_constraints-strictopt.sdc' ...
+Current (total cpu=0:00:45.5, real=0:00:57.0, peak res=843.6M, current mem=842.8M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ./physical_design/constraints/dlx-synthesized_constraints-strictopt.sdc, Line 8).
+
+INFO (CTE): Reading of timing constraints file ./physical_design/constraints/dlx-synthesized_constraints-strictopt.sdc completed, with 1 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=850.0M, current mem=850.0M)
+Current (total cpu=0:00:45.6, real=0:00:57.0, peak res=850.0M, current mem=850.0M)
+Total number of combinational cells: 99
+Total number of sequential cells: 29
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+Total number of usable buffers: 9
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+Total number of usable inverters: 6
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+ERROR     TECHLIB-420          2  Number of ecsm_waveforms in the '%s' tab...
+ERROR     TECHLIB-1256         2  The %s is being ignored due to errors in...
+ERROR     TECHLIB-1346         2  The attribute '%s' defined in group '%s'...
+*** Message Summary: 1 warning(s), 6 error(s)
+
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -coreMarginsBy die -site FreePDK45_38x28_10R_NP_162NW_34O -r 1.0 0.6 5 5 5 5
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> saveDesign ./physical_design/1_stage_init.enc
+#% Begin save design ... (date=07/19 02:57:44, mem=881.4M)
+% Begin Save ccopt configuration ... (date=07/19 02:57:44, mem=883.4M)
+% End Save ccopt configuration ... (date=07/19 02:57:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=884.3M, current mem=884.3M)
+% Begin Save netlist data ... (date=07/19 02:57:44, mem=884.3M)
+Writing Binary DB to ./physical_design/1_stage_init.enc.dat.tmp/vbin/DLX.v.bin in multi-threaded mode...
+% End Save netlist data ... (date=07/19 02:57:44, total cpu=0:00:00.1, real=0:00:00.0, peak res=913.0M, current mem=885.5M)
+Saving symbol-table file in separate thread ...
+Saving congestion map file in separate thread ...
+Saving congestion map file ./physical_design/1_stage_init.enc.dat.tmp/DLX.route.congmap.gz ...
+% Begin Save AAE data ... (date=07/19 02:57:44, mem=886.8M)
+Saving AAE Data ...
+% End Save AAE data ... (date=07/19 02:57:44, total cpu=0:00:00.0, real=0:00:01.0, peak res=886.8M, current mem=886.8M)
+Saving preference file ./physical_design/1_stage_init.enc.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+**INFO (INTERRUPT): The current script will stop before next command.
+**INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+Saving global file ...
+Innovus terminated by user interrupt.
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving special route data file in separate thread ...
+Saving PG Conn data in separate thread ...
+Saving placement file in separate thread ...
+Saving route file in separate thread ...
+** Saving stdCellPlacement_binary (version# 2) ...
+Saving property file in separate thread ...
+Save Adaptive View Pruning View Names to Binary file
+
+*** Memory Usage v#2 (Current mem = 1052.883M, initial mem = 280.289M) ***
+TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: savePGConnFile REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
+Saving property file ./physical_design/1_stage_init.enc.dat.tmp/DLX.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1053.9M) ***
+*** Message Summary: 2 warning(s), 6 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:46.5, real=0:00:58.0, mem=1053.9M) ---

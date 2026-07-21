@@ -1,0 +1,1 @@
+/home/ms25.2/Microlectronics-Systems-Lab/DLX_Pro/physical_design/constraints/dlx-synthesized_constraints-strictopt.sdc

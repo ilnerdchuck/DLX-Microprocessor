@@ -1,0 +1,48 @@
+#==============================================================================
+#  Project     : DLX Processor Implementation
+#  File        : physical_design_template.tcl
+#  Description : TCL file used to run the Physical Design of the DLX processor
+#
+#  Group Name  : Group 02
+#  Members     : Sabina Sarcuni
+#                Leonadro Gallina
+#                Francesco Mignone
+#
+#  Supervisor  : Mariagrazia Graziano, Giavanna Turvani
+#  Institution : Polytechnic of Turin, Italy
+#
+#  Created     : 11 July 2025
+#  Last Edited : 11 July 2025
+#
+#  Notes       : - 5-stage pipeline (IF, ID, EX, MEM, WB)
+#                - Supports basic instruction set: R-type, I-type, J-type
+#                - Hazard detection and forwarding implemented
+#                - Designed for simulation in ModelSim/Questasim
+#
+#==============================================================================
+
+set defHierChar {/}
+set delaycal_input_transition_delay {0.1ps}
+set fpIsMaxIoHeight 0
+set init_gnd_net {gnd}
+
+# Load the structure of the top level entity
+# TODO: make it a true template
+set init_mmmc_file {./scripts/scripts_templates/default.view}
+
+set init_oa_search_lib {}
+set init_pwr_net {vdd}
+set init_verilog {./physical_design/designs/dlx-structural-strictopt.v}
+set lsgOCPGainMult 1.000000
+
+set LEF_DIR /eda/dk/nangate45/lef
+set LEF_list [list ${LEF_DIR}/NangateOpenCellLibrary.lef]
+
+set init_lef_file "${LEF_list}"
+
+set LIB_DIR /eda/dk/nangate45/liberty
+set MyTimingLibNom ${LIB_DIR}/NangateOpenCellLibrary_typical_ecsm_nowlm.lib
+set MyTimingLibSlow ${LIB_DIR}/NangateOpenCellLibrary_slow_ecsm.lib
+set MyTimingLibFast ${LIB_DIR}/NangateOpenCellLibrary_fast_ecsm.lib
+
+set MycapTable $LEF_DIR/captables/NCSU_FreePDK_45nm.capTbl
